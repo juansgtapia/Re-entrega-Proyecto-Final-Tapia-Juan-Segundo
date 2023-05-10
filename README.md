@@ -1,2 +1,6 @@
 # Re-entrega-Proyecto-Final-Tapia-Juan-Segundo
-Juan Segundo Tapia, 40425
+Juan Segundo Tapia
+Python
+40425
+
+El proyecto fue enteramente desarrollado individualmente
