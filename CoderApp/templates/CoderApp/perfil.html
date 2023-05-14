@@ -1,0 +1,21 @@
+{% extends "CoderApp/main.html" %}
+
+{% block title %}
+Portal estudiantes 
+{% endblock %}
+
+{% block content %}
+
+<h6 style="color: white;"> Info:</h6>
+<p style="color: white;">
+    Nombre de usuario: <i style="color: wheat;">{{ user.username }}</i>
+</p>
+
+<p>
+    <button style="color: black;">
+        <a style="color:black;" href = "{% url 'agregaravatar' %}">Cambiar imagen de perfil</a>
+    </button>
+</p>
+{% endblock %}
+
+{% block x %} Información del usuario {% endblock %}

@@ -1,0 +1,20 @@
+{% extends "CoderApp/main.html" %}
+
+{% block title %}
+Portal de busqueda  
+{% endblock %}
+
+{% block content %}
+
+<h3 style="color: white;">Agregar avatar</h3>
+<form method="POST" enctype="multipart/form-data" style="color: white;">
+    {% csrf_token %}
+    {{ formulario.as_p }}
+    <input type="submit" value="Cargar">
+</form>
+
+{% endblock %}
+
+
+
+{% block x %} Busqueda de cursos {% endblock %}

@@ -1,0 +1,27 @@
+{% extends "CoderApp/main.html" %}
+
+{% block title %}
+Blog de estudiantes
+{% endblock %}
+
+{% block content %}
+
+<body style="color: white;">Bienvenido al blog de estudiantes, recuerda mantener la cordialidad.</body>
+
+{% for post in posteos %}
+<li>
+    <h3 style="color: white;">{{ post.titulo }}</h3>
+    <h6><i style="color: wheat;">por {{ post.autor.username }} </i></h6>
+    {% if post.imagen_post %}
+        <img src="{{ post.imagen_post.url }}" alt="{{ post.titulo }}">
+    {% endif %}
+    <p> <i style="color: white;">{{ post.descripcion }}</i></p>
+    <p>
+        <a style="color:khaki" href="{% url 'PostDelete' titulo_posteo=post.titulo %}">Eliminar</a>
+    </p>
+</li>
+{% endfor %}
+
+{% endblock %}
+
+{% block x %} Blog de estudiantes {% endblock %}
